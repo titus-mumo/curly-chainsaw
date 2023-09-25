@@ -1,5 +1,7 @@
-def strStr(haystack, needle):
-    arr = []
+'''Given two strings needle and haystack, return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.'''
+
+
+def strStr(self, haystack, needle):
     index = None
     status = False
     last_consideration = len(haystack) - len(needle)
@@ -7,7 +9,6 @@ def strStr(haystack, needle):
         index_i = haystack.index(i)
         end_index = index_i + len(needle)
         word = haystack[index_i: end_index]
-        arr.append(word)
         if word == needle:
             status = True
             index = index_i
@@ -15,6 +16,4 @@ def strStr(haystack, needle):
     if status == True:
         return index
     else:
-        return arr
-
-print(strStr('mississippi', 'issip'))
+        return -1
