@@ -3,7 +3,7 @@
 If there is no common prefix, return an empty string "".'''
 
 
-def longestCommonPrefix(self, strs):
+def longestCommonPrefix(strs):
     max_lengths = []
     all_instances = []
     element_count= {}
