@@ -4,7 +4,7 @@ A word is a maximal
 substring
  consisting of non-space characters only.'''
 
-def lengthOfLastWord(self, s):
+def lengthOfLastWord(s):
     s = s.split(' ')
     for i in s[:]:
         if i == ' ' or i == '':
